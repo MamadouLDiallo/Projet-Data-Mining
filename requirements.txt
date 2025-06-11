@@ -1,12 +1,12 @@
 streamlit 
 pandas
 matplotlib
-plotly.express
+plotly
 numpy
 seaborn 
 io
-PIL
-sklearn 
+PIL 
+scikit-learn
 datetime 
 ast
 re
