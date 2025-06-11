@@ -201,9 +201,6 @@ def modeling_and_predictions():
     if df is None:
         st.warning("Veuillez d'abord importer un fichier de données pour la modélisation.")
         return
-
-    st.write("Cette section est en cours de développement. Restez à l'écoute pour des mises à jour !")
-    st.write("Modélisation et prédictions seront ajoutées prochainement.")
     
     menu1 = ["K-means", "Segmentation RFM", "FP_GROWTH"] 
     choix = st.sidebar.selectbox('Choisisser les méthodes suivants', menu1, key='modeling_menu_selection')
