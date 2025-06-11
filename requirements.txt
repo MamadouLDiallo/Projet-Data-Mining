@@ -1,13 +1,8 @@
 streamlit
 pandas
+numpy
 matplotlib
 plotly
-numpy
 seaborn
-Pillow
 scikit-learn
-openpyxl
-squarify
-import-ipynb
-findspark
-altair
+Pillow
