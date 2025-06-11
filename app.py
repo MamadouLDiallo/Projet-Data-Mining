@@ -206,13 +206,11 @@ def modeling_and_predictions():
     choix = st.sidebar.selectbox('Choisisser les méthodes suivants', menu1, key='modeling_menu_selection')
 
     # Creation of df_invoice (should ideally be done once or based on df update)
-    # Ensure InvoiceDate is datetime for calculations
-    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+  
     df_invoice=df.groupby(['InvoiceNo', 'InvoiceDate', 'Quantity', 'CustomerID']).agg({'Montant': lambda x:x.sum()}).reset_index()
     
     # creation de analysis_date
     analysis_date = max(df_invoice['InvoiceDate']) + timedelta(days= 1)
-    st.write(f"Date d'analyse: {(analysis_date).date()}")
     
     def kmeans_clustering(df_to_cluster):
         st.subheader("K-means Clustering")
