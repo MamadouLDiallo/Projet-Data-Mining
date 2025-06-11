@@ -1,0 +1,12 @@
+streamlit 
+pandas
+matplotlib
+plotly.express
+numpy
+seaborn 
+io
+PIL
+sklearn 
+datetime 
+ast
+re
