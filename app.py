@@ -320,8 +320,6 @@ def modeling_and_predictions():
         # Contrat de maintenance
         st.subheader("Contrat de maintenance")
         ARI_score = pd.read_csv("ari_scores.csv")
-        st.write("Score ARI pour chaque semaine :")
-        st.dataframe(ARI_score)
         ARI_scores = ARI_score['ARI_score'].tolist()
 
         # Paramètres de style
