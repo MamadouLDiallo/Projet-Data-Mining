@@ -434,6 +434,8 @@ def modeling_and_predictions():
                                             int(value * 100 / segments_counts.sum())),
                     va='center',
                     ha='left')
+        plt.tight_layout()
+        st.pyplot(fig, clear_figure=True)
 
         st.pyplot(fig)
 
