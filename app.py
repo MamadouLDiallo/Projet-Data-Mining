@@ -740,7 +740,9 @@ if st.session_state.menu_choice == "À propos de nous":
     middle2_column.markdown("[+221 771050342](tel:+221771050342)")
 
 # Right column - Linkedin
-    right_column.subheader("📷 Linked")
+    #right_column.subheader("📷 Linked")
+    right_column.subheader("LinkedIn")
+    right_column.image("https://cdn-icons-png.flaticon.com/512/174/174857.png", width=30)
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/aliou-diack-977771241/)")
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/mamadou-lamarana-diallo-937430274/)")
 
