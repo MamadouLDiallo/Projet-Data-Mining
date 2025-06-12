@@ -538,7 +538,7 @@ def Summary():
         df_selection = st.session_state['df'].copy() # Travailler sur une copie
 
         # Assurez-vous que 'InvoiceDate' est bien un type datetime
-        df_selection['InvoiceDate'] = pd.to_datetime(df_selection['InvoiceDate'])
+       # df_selection['InvoiceDate'] = pd.to_datetime(df_selection['InvoiceDate'])
 
         # Calcul des ventes totales à partir de la colonne 'Montant'
         total_sales = int(df_selection["Montant"].sum())
