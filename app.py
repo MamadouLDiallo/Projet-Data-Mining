@@ -739,8 +739,7 @@ if st.session_state.menu_choice == "À propos de nous":
 
 # Right column - Linkedin
     #right_column.subheader("📷 Linked")
-   
-    right_column.subheader('<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30">', unsafe_allow_html=True,"LinkedIn")
+    right_column.markdown("""<h3><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20" style="vertical-align: middle;"> LinkedIn</h3> """, unsafe_allow_html=True)
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/aliou-diack-977771241/)")
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/mamadou-lamarana-diallo-937430274/)")
 
