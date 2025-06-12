@@ -721,7 +721,7 @@ if st.session_state.menu_choice == "À propos de nous":
     st.write("Nous sommes une équipe dédiée à l'analyse des données clients pour améliorer les stratégies commerciales.")
     st.write("Notre objectif est de fournir des insights précieux à partir des données clients pour aider les entreprises à mieux comprendre leurs clients et à optimiser leurs opérations.")
 
-    st.write("Contact Us")
+    #st.write("Contact Us")
 
 # Create three columns layout
     left_column, middle1_column, middle2_column, right_column = st.columns(4)
