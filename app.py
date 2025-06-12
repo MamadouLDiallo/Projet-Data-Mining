@@ -572,7 +572,7 @@ def Summary():
 
         st.markdown("---") # Séparateur
 
-        # Ventes par Description de Produit (Top 10)
+        # Ventes par Description de Produit (Top 5)
         sales_by_description = df_selection.groupby(by=["Description"])[["Montant"]].sum().sort_values(
             by="Montant", ascending=False).head(5)
         fig_description_sales = px.bar(
@@ -580,7 +580,7 @@ def Summary():
             y="Montant",
             x=sales_by_description.index,
             orientation="v",
-            title="<b>Top 5 Produits ayant enregistré plus de chiffre d'affaires</b>",
+            title="<b>Top 5 des Produits ayant  plus de chiffre d'affaires</b>",
             color_discrete_sequence=["#0083B8"] * len(sales_by_description),
             template="plotly_white",
         )
