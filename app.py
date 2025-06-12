@@ -709,8 +709,8 @@ def Summary():
 # --- Main Application Logic ---
 # Use st.session_state.menu_choice to control which section is displayed
 if st.session_state.menu_choice == "À propos de nous":
-    st.title("📊 Analyse et Segmentation des clients pour la decision marketing 📈")
-    st.header("Application d'analyse comportementale a partir de données transactionnelles", divider='rainbow')
+    st.title("📊 Analyse et Segmentation des clients pour la decision marketing ")
+    st.header("📈 Application d'analyse comportementale a partir de données transactionnelles", divider='rainbow')
     try:
         image = Image.open("image_ecommerce.jpg")
         st.image(image, caption="image_ecommerce")
@@ -739,7 +739,7 @@ if st.session_state.menu_choice == "À propos de nous":
     middle2_column.markdown("\n\n\n[+221 782948335](tel:+221782948335)")
     middle2_column.markdown("[+221 771050342](tel:+221771050342)")
 
-# Right column - Instagram
+# Right column - Linkedin
     right_column.subheader("📷 Linked")
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/aliou-diack-977771241/)")
     right_column.markdown("[Linkedin](https://www.linkedin.com/in/mamadou-lamarana-diallo-937430274/)")
