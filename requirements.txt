@@ -6,3 +6,4 @@ plotly
 seaborn
 scikit-learn
 Pillow
+openpyxl
