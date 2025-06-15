@@ -135,7 +135,7 @@ def visualize_data():
 
 
         # S'assurer que 'InvoiceDate' est bien au format datetime
-        df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+        #df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 
         # Extraire uniquement la date (sans l'heure)
         df["Date"] = df["InvoiceDate"].dt.date
@@ -255,7 +255,7 @@ def modeling_and_predictions():
         st.pyplot(fig)
         
         # Application du K-means
-        n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 10, 5) # User can select k
+        n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 5, 5) # User can select k
         
         model = KMeans(n_clusters=n_clusters_selected, init='k-means++', max_iter=300, n_init=10, random_state=0)
         model_kmeans = model.fit(base_scaled)
