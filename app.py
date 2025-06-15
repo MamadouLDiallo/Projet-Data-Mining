@@ -255,7 +255,14 @@ def modeling_and_predictions():
         st.pyplot(fig)
         
         # Application du K-means
-        n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 10, 5) # User can select k
+        #n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 10, 5) # User can select k
+        n_clusters_selected = st.slider(
+              "Sélectionnez le nombre de clusters (k)", 
+               min_value=1,  # Permet k=1 pour analyse (même si peu utile)
+               max_value=5,  # Limite à 5 comme demandé
+               value=3,      # Valeur par défaut
+               help="Choisissez entre 1 et 5 clusters")
+
         
         model = KMeans(n_clusters=n_clusters_selected, init='k-means++', max_iter=300, n_init=10, random_state=0)
         model_kmeans = model.fit(base_scaled)
