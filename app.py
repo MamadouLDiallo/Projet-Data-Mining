@@ -255,7 +255,7 @@ def modeling_and_predictions():
         st.pyplot(fig)
         
         # Application du K-means
-        n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 5, 5) # User can select k
+        n_clusters_selected = st.slider("Sélectionnez le nombre de clusters (k)", 2, 10, 5) # User can select k
         
         model = KMeans(n_clusters=n_clusters_selected, init='k-means++', max_iter=300, n_init=10, random_state=0)
         model_kmeans = model.fit(base_scaled)
@@ -330,7 +330,7 @@ def modeling_and_predictions():
 
         # Tracé de la courbe
         sns.lineplot(x=range(1, 12), y=ARI_scores, ax=ax)
-        ax.axvline(6, c='red', ls='--')
+        ax.axvline(4, c='red', ls='--')
 
         # Personnalisation
         ax.set_title('Évolution du score ARI')
