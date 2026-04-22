@@ -59,7 +59,6 @@ Dans un contexte concurrentiel, les entreprises doivent :
 - Python  
 - Pandas  
 - Scikit-learn  
-- Mlxtend (FP Growth)  
 - Plotly  
 - Streamlit  
 
