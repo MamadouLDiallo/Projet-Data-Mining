@@ -52,5 +52,5 @@ Application web développée avec Streamlit permettant :
 ---
 
 ## 📷 Aperçu du tableau de bord
-<img width="1113" height="647" alt="image" src="https://github.com/MamadouLDiallo/Projet-Prevision-du-Medicament/blob/main/Medicament.jpg" />
+<img width="1113" height="647" alt="image" src="https://github.com/MamadouLDiallo/Projet-Data-Mining/blob/main/Projet_Data_Mining.jpg" />
 
