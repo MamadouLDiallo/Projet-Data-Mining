@@ -51,7 +51,6 @@ Application web développée avec Streamlit permettant :
 
 ---
 
-## 🚀 Lancer le projet en local
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+## 📷 Aperçu du tableau de bord
+<img width="1113" height="647" alt="image" src="https://github.com/MamadouLDiallo/Projet-Prevision-du-Medicament/blob/main/Medicament.jpg" />
+
