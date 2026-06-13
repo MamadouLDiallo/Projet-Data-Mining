@@ -532,7 +532,11 @@ def modeling_and_predictions():
 
 def Summary():
     st.header("Analyse des Ventes - Résumé Exécutif")
-    st.header("Voici Votre Analyse des Ventes", divider="star")
+    st.subheader("Voici Votre Analyse des Ventes")
+    st.divider()
+
+# Ou avec le style "star"
+st.header("Voici Votre Analyse des Ventes", divider="star")
 
     if 'df' in st.session_state and st.session_state['df'] is not None:
         df_selection = st.session_state['df'].copy() # Travailler sur une copie
