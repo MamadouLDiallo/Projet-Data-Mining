@@ -532,7 +532,7 @@ def modeling_and_predictions():
 
 def Summary():
     st.header("Analyse des Ventes - Résumé Exécutif")
-    st.header("Voici Votre Analyse des Ventes", divider="star")
+    #st.header("Voici Votre Analyse des Ventes", divider="star")
 
 # Ou avec le style "star"
 st.header("Voici Votre Analyse des Ventes", divider="star")
