@@ -535,7 +535,7 @@ def Summary():
     #st.header("Voici Votre Analyse des Ventes", divider="star")
 
 # Ou avec le style "star"
-st.header("Voici Votre Analyse des Ventes", divider="star")
+   st.header("Voici Votre Analyse des Ventes", divider="star")
 
     if 'df' in st.session_state and st.session_state['df'] is not None:
         df_selection = st.session_state['df'].copy() # Travailler sur une copie
