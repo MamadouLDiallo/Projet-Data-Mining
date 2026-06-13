@@ -708,7 +708,7 @@ if 'df' in st.session_state and st.session_state['df'] is not None:
         st.dataframe(rfm_df.nlargest(5, 'Montant')) # Utilise 'Montant' de rfm_df
 
 
-    else:
+else:
         st.warning("Veuillez d'abord importer un fichier de données pour afficher le résumé des ventes.")
 
 # --- Main Application Logic ---
